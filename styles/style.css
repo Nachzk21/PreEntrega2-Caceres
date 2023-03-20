@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url(../img/modo-diablo-duki.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 10px
+}
+
+.header .navlinks {
+    list-style: none;
+
+}
+
+.header .navlinks li {
+    display: inline-block;
+    padding: 20px;
+
+}
+
+.header .navlinks a {
+    font-size: 700;
+    color: red;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+
+
+
+}
+
+.header .navlinks li:hover {
+    transform: scale(1.3);
+    
+}
+
+.header .navlinks li a:hover {
+    color: white;
+}
+
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+
+}
+.item{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.item h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.historia{
+    display: flex;
+
+}
+
+.historia div{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.HistoriaContenido{
+    display: flex;
+}
+
+.HistoriaContenido div{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.HistoriaContenido div p{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.vivo {
+    display: flex;
+}
+
+.vivo div{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.envivo{
+    display: flex;
+}
+
+.envivo div{
+    font-size: 30px;
+    background-color: aliceblue;
+    color: black;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.envivo div p{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.multimediaEnVivo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.multimediaEnVivo img{
+    width: 560px;
+    height: 315px;
+}
+
+/* Discografia del grupo */
+
+.tituloDiscografia{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    color: black;
+    font-size: 30px;
+    margin-top: 10px;
+    border: 5px solid black;
+}
+
+.discografia{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px;
+    background-color: rgba(162, 180, 182, 0.377)
+}
+
+
+
+.grid-container{
+    display: grid;
+    justify-content: center ;
+    align-items: start;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grid-container iframe{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 500px;
+    height: 250px;
+}
+
+.grid-container div{
+    font-size: 30px;
+}
