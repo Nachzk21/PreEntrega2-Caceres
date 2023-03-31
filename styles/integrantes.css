@@ -4,7 +4,6 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    
     font-family: 'Nunito', sans-serif;
 }
 
@@ -235,8 +234,8 @@ nav ul li:hover{
     }
 
     .infoDuki  div .fotos {
-         flex-direction: column;
-         align-items:center;
+        flex-direction: column;
+        align-items:center;
     }
     .infoDuki  div .fotos img{
         margin: 10px;
@@ -317,9 +316,9 @@ nav ul li:hover{
     }
 
     .infoDuki  div .fotos {
-         flex-direction: row;
-         align-items:center;
-         box-sizing: border-box;
+        flex-direction: row;
+        align-items:center;
+        box-sizing: border-box;
     }
     .infoDuki  div .fotos img{
         margin: 10px;
