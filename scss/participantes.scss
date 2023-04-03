@@ -1,0 +1,417 @@
+@use "reset";
+@use "navbar";
+
+// Contenido de la pagina
+
+body {
+    background-color: burlywood;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+
+    .item {
+        margin: 10px;
+        padding: 10px;
+        color: black;
+        font-size: 30px;
+        background-color: aliceblue;
+        border: 3px solid black;
+    }
+}
+
+.infoDuki {
+    display: flex;
+    width: 100%;
+
+    div {
+        background-color: aliceblue;
+        color: black;
+        margin: 10px;
+        border: 2px solid black;
+        p {
+            font-size: 20px;
+            &:first-child {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+        }
+        .fotos{
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 550px;
+                height: 315px;
+            }
+        }
+    }
+}
+
+.infoNeo{
+    display: flex;
+    width: 100%;
+
+    div {
+        background-color: aliceblue;
+        color: black;
+        margin: 10px;
+        border: 2px solid black;
+        p {
+            font-size: 20px;
+            &:first-child {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+        }
+        .fotos_neo {
+            margin: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            img {
+                width: 550px;
+                height: 315px;
+            }
+        }
+    }
+}
+
+.infoYsy {
+    display: flex;
+    width: 100%;
+
+    div {
+        background-color: aliceblue;
+        color: black;
+        margin: 10px;
+        border: 2px solid black;
+
+        p {
+            font-size: 20px;
+
+            &:first-child {
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 5px;
+            }
+        }
+
+        .fotos_ysy {
+            margin: 10px;
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 550px;
+                height: 315px;
+            }
+        }
+    }
+}
+
+// Media queries
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .checkbtn {
+        display: flex;
+    }
+
+    nav {
+        padding: 0 30px;
+
+        ul {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: black;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            flex-direction: column;
+            z-index: 10;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+
+        .item {
+            justify-content: center;
+        }
+    }
+
+    .infoDuki {
+        flex-direction: column;
+
+        div {
+            .fotos {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+    }
+
+
+
+    .infoNeo {
+        flex-direction: column;
+
+        div {
+            p {
+                font-size: 18px;
+            }
+
+            .fotos_neo {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+
+    .infoYsy {
+        flex-direction: column;
+
+        div {
+            p {
+                font-size: 18px;
+            }
+
+            .fotos_ysy {
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 750px) and (max-width: 1024px) {
+
+    .checkbtn {
+        display: flex;
+    }
+    nav {
+        padding: 0 30px;
+        ul {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: black;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            flex-direction: column;
+            z-index: 10;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    .titulo {
+        flex-direction: row
+    }
+    .infoDuki {
+        flex-direction: column;
+        div {
+            p {
+                font-size: 18px;
+            }
+            .fotos {
+                background-color: aqua;
+                flex-direction: row;
+                align-items: center;
+                box-sizing: border-box;
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+
+    .infoNeo {
+        flex-direction: column;
+
+        div {
+            p {
+                font-size: 18px;
+            }
+
+            .fotos_neo {
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+
+    .infoYsy {
+        flex-direction: column;
+
+        div {
+            p {
+                font-size: 18px;
+            }
+
+            .fotos_ysy {
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    margin: 10px;
+                    width: 320px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 750px) {
+
+    .checkbtn {
+        display: flex;
+    }
+
+    nav {
+        padding: 0 30px;
+
+        ul {
+            position: absolute;
+            width: 100%;
+            height: calc(100vh - 80px);
+            background: black;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            flex-direction: column;
+            z-index: 10;
+
+            li {
+                margin: 20px 0;
+
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+
+}
+
+.titulo {
+    flex-direction: row
+}
+
+.infoDuki {
+    flex-direction: column;
+
+    div {
+        p {
+            font-size: 18px;
+        }
+
+        .fotos {
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+            img{
+                margin: 10px;
+                width: 320px;
+            }
+        }
+    }
+
+}
+.infoNeo {
+    flex-direction: column;
+    div{
+        p{
+            font-size: 18px;
+        }
+        .fotos_neo{
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin: 10px;
+                width: 320px;
+            }
+        }
+    }
+}
+.infoYsy {
+    flex-direction: column;
+    div{
+        p{
+            font-size: 18px;
+        }
+        .fotos_ysy{
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin: 10px;
+                width: 320px;
+            }
+        }
+    }
+}
+

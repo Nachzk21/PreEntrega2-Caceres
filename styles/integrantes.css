@@ -400,9 +400,9 @@ nav ul li:hover{
     }
 
     .infoDuki  div .fotos {
-         flex-direction: column;
-         align-items:center;
-         box-sizing: border-box;
+    flex-direction: column;
+    align-items:center;
+    box-sizing: border-box;
     }
     .infoDuki  div .fotos img{
         margin: 10px;

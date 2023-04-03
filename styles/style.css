@@ -61,7 +61,6 @@ nav ul li:hover {
     color: white;
     cursor: pointer;
     display: none;
-
 }
 
 #check {
@@ -163,10 +162,9 @@ nav ul li:hover {
 .discografia {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 300px;
-    background-color: rgba(162, 180, 182, 0.377)
+    grid-template-rows: 50% 50%;
+    background-color: rgba(162, 180, 182, 0.377);
 }
-
 
 
 .grid-container {
@@ -191,6 +189,8 @@ nav ul li:hover {
 }
 
 /* media quaries */
+
+/* Media celular */
 @media (min-width: 320px) and (max-width: 480px) {
     .checkbtn {
         display: flex;
@@ -237,61 +237,43 @@ nav ul li:hover {
     .multimediaEnVivo img {
         margin: 10px;
     }
-
-
     
-    
-}
+    /* Discofra del gruop */
 
-
-@media (min-width: 750px) and (max-width: 1024px) {
-    .checkbtn {
+    .tituloDiscografia{
         display: flex;
+        flex-direction: row;
     }
 
-    nav {
-        padding: 0 30px;
-    }
+    .discografia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(162, 180, 182, 0.377)
 
-    ul {
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 80px);
-        background: black;
-        top: 80px;
-        left: -100%;
+    }
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        align-items: start;
+        border: 2px solid black;
         text-align: center;
-        transition: all .5s;
-        flex-direction: column;
-        z-index: 10;
+        font-size: 30px;
+    }
+    
+    .grid-container iframe {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 500px;
+        height: 250px;
     }
 
-    nav ul li {
-        margin: 20px 0;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    #check:checked~ul {
-        left: 0;
-    }
-
-    .multimediaEnVivo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .multimediaEnVivo iframe {
-        margin: 10px;
-    }
-
-    .multimediaEnVivo img {
-        margin: 10px;
-    }
-
+    
+    
 }
+
+/* Media Tablet */
 
 @media (min-width: 481px) and (max-width: 750px) {
     .checkbtn {
@@ -340,10 +322,96 @@ nav ul li:hover {
         margin: 10px;
     }
     
+    .tituloDiscografia{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
     .discografia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: rgba(162, 180, 182, 0.377)
+    }
+    .grid-container {
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
-        grid-template-rows: 300px 300px 300px 300px;
+        justify-content: center;
+        align-items: start;
+        border: 2px solid black;
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .grid-container iframe {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 500px;
+        height: 250px;
+    }
+
+}
+
+/* Media Notebook */
+
+@media (min-width: 750px) and (max-width: 1024px) {
+    .checkbtn {
+        display: flex;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    ul {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 10;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .multimediaEnVivo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .multimediaEnVivo iframe {
+        margin: 10px;
+    }
+
+    .multimediaEnVivo img {
+        margin: 10px;
+    }
+
+    .tituloDiscografia{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .discografia {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         background-color: rgba(162, 180, 182, 0.377)
     }
     
@@ -365,5 +433,5 @@ nav ul li:hover {
         width: 500px;
         height: 250px;
     }
-
 }
+

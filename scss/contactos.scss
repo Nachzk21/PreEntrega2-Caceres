@@ -1,0 +1,88 @@
+@use "reset";
+@use "navbar";
+@use "responsive";
+
+body{
+    background-color: bisque;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+    font-family:'Nunito', sans-serif;
+    .item{
+        font-size: 30px;
+        color: black;
+        margin: 20px;
+        h3{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+}
+
+.contenedor{
+    font-family: 'Nunito', sans-serif;
+    .form{
+        background: rgba(0, 0, 0, .8);
+        width: 90%;
+        max-width: 650px;
+        margin: auto;
+        padding: 5px 35px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 3px;
+        .form-textarea{
+            resize: vertical;
+            max-height: 150px;
+            min-height: 50px;
+            background: rgba(0, 0, 0, .7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+        }
+        .form-input{
+            background: rgba(0, 0, 0, .7);
+            border: none;
+            outline: none;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            font-size: 14px;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .form-label{
+            display: block;
+            color: rgb(245, 12, 12);
+            font-size: 16px;
+            font-family: 'Nunito', sans-serif;
+            position: relative;
+        }
+        .btn-submit{
+            width: 100%;
+            font-family: 'Nunito', sans-serif;
+            outline: none;
+            background: #ff1b1b;
+            border: none;
+            color: white;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: all .5s ease;
+            &:hover{
+                background:rgb(245, 72, 72) 
+            }
+        }
+    }
+}
+
