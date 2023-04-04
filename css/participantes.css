@@ -271,7 +271,6 @@ body {
     font-size: 18px;
   }
   .infoDuki div .fotos {
-    background-color: aqua;
     flex-direction: row;
     align-items: center;
     box-sizing: border-box;
